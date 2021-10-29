@@ -1,0 +1,61 @@
+<div class="page-container">
+  <div class="page-sidebar-wrapper">
+    <div class="page-sidebar navbar-collapse collapse">
+      <div class="page-sidebar navbar-collapse collapse">
+        <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
+              <li>
+                <a href="#login"><span class="title">Login</span></a>
+              </li>
+              <li>
+                <a href="#register"><span class="title">Register</span></a>
+              </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page-content-wrapper">
+    <div class="page-content">
+      <div class="col-md-6 col-sm-12">
+        <div class="portlet light ">
+          <div class="portlet-title">
+            <div class="caption caption-md">
+              <i class="icon-bar-chart font-green-haze hide"></i>
+              <span class="caption-subject font-green-haze bold uppercase">Login</span>
+            </div>
+          </div>
+          <div class="portlet-body">
+            <div class="table-scrollable table-scrollable-borderless">
+            <table class="table table-hover table-light">
+              <tbody>
+                <tr>
+                  <div class="main">
+                    <form class="form">
+                      <div class="card-body">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Username" ng-model=data.username>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Address" ng-model=data.address>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Birth date" ng-model=data.birth>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Phone number" ng-model=data.phone>
+                        </div>
+                      </div>
+                      <register info=data></register>
+                    </form>
+                  </div>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>	
+  </div>
+</div>
